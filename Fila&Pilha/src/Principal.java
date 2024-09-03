@@ -14,7 +14,8 @@ public class Principal {
         f.adicionar(p2);
         f.adicionar(p3);
         f.adicionar(p4);
-
+        
+        System.out.println(f.verificar());
 
         while (!f.verificar()) {
 
@@ -29,6 +30,8 @@ public class Principal {
             
         }
         System.out.println("\n========================");
+
+
 
     }
 
