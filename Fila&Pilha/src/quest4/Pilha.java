@@ -1,4 +1,4 @@
-package quest3;
+package quest4;
 import java.util.Stack;
 
 public class Pilha {
@@ -8,13 +8,22 @@ public class Pilha {
     public void adicionar(Processo p){
 
         pilha.push(p);
+        System.out.println("Empilhado: " + p.toString());
 
     }
 
     public Processo remover(){
 
-        return pilha.pop();
+        if(verificar()){
 
+            System.out.println("Pilha vazia");
+            return null;
+
+        }
+
+        System.out.print("Desempilhando: ");
+        return pilha.pop();
+    
     }
 
     public boolean verificar(){
@@ -25,7 +34,36 @@ public class Pilha {
 
     public void mostrar(){
 
-        System.out.println(pilha.toString());
+        if(verificar()){
+
+            System.out.println("Pilha vazia");
+
+        }
+
+        else{
+
+            System.out.println("Elementos da pilha: " + pilha.toString());
+
+        }
+
+
+    }
+
+    public void mostrarprimeiro(){
+
+        if(verificar()){
+
+            System.out.println("Pilha vazia");
+
+        }
+
+        else{
+
+        Processo topo = pilha.firstElement();
+
+                System.out.println("Primeiro elemento: " + topo.toString());
+
+        }
 
     }
 
