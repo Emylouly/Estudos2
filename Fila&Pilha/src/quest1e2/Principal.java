@@ -1,3 +1,4 @@
+package quest1e2;
 public class Principal {
 
     public static void main(String[] args) {
@@ -15,13 +16,10 @@ public class Principal {
         f.adicionar(p3);
         f.adicionar(p4);
         
-        System.out.println(f.verificar());
-
-        while (!f.verificar()) {
-
-            p.adicionar(f.remover());
-            
-        }
+        p.adicionar(p1);
+        p.adicionar(p2);
+        p.adicionar(p3);
+        p.adicionar(p4);
 
         System.out.println("Fila invertida: ");
         while (!p.verificar()) {
@@ -29,9 +27,6 @@ public class Principal {
             System.out.print(p.remover() + " - ");
             
         }
-        System.out.println("\n========================");
-
-
 
     }
 

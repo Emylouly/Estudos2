@@ -1,3 +1,4 @@
+package quest1e2;
 import java.util.Stack;
 
 public class Pilha {
