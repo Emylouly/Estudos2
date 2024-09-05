@@ -9,12 +9,25 @@ public class Principal {
 
         Lista l = new Lista();
 
-        l.adicionarinicio(c1);
-        l.adicionarinicio(c2);
         l.adicionarinicio(c);
-        l.adicionarinicio(c3);
+        l.adicionarfim(c3);
+        l.adicionarinicio(c1);
+        l.adicionarPorPosicao(c2, 3);
+
+        //l.imprimir();
+
+        //l.removernoinicio();
+        //l.removernoinicio();
+
+        System.out.println("\n\n");
 
         l.imprimir();
+
+        l.procurar("Araujo");
+
+
+
+
 
 
     }
