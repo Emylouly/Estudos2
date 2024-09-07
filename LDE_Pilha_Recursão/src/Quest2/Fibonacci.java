@@ -23,8 +23,8 @@ public class Fibonacci {
         
             else{
         
-                total = (n-1) + (n-2);
-                System.out.println(total);
+                System.out.println((n-1) + (n-2));
+                total =(n-1) + (n-2);
                 n++;
         
             }
