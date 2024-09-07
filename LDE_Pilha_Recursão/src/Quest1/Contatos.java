@@ -1,3 +1,4 @@
+package Quest1;
 public class Contatos {
     
     private String nome;
