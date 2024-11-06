@@ -11,8 +11,10 @@ public class Principal {
         e.inserir(5);
         e.inserir(7);
 
-        No n = new No();        
+        No n = new No();  
+        No m = new No();      
         n = e.valorminimo();
+        m = e.valormaximo();
 
         //e.preOrdem();
         //System.out.println("\n\n");
@@ -21,6 +23,8 @@ public class Principal {
         //e.inOrdem();
 
         System.out.println(n.getValor());
+        System.out.println("\n\n" + m.getValor());
+
 
     }
 
