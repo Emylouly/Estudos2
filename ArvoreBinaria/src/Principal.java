@@ -11,11 +11,16 @@ public class Principal {
         e.inserir(5);
         e.inserir(7);
 
+        No n = new No();        
+        n = e.valorminimo();
+
         //e.preOrdem();
         //System.out.println("\n\n");
         //e.posOrdem();
         //System.out.println("\n\n");
-        e.inOrdem();
+        //e.inOrdem();
+
+        System.out.println(n.getValor());
 
     }
 

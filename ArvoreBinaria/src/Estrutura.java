@@ -92,6 +92,26 @@ public class Estrutura {
     
     }
 
+
+
+    }
+
+    private No valorminimo(No no){
+
+        if(no.getEsquerda()!=null){
+
+            no = valorminimo(no.getEsquerda());
+
+        }
+
+        return no;
+
+    }    
+    
+    public No valorminimo(){
+
+        return valorminimo(this.raiz);
+
     }
 
 
