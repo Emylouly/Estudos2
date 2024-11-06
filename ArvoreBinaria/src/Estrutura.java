@@ -132,5 +132,26 @@ public class Estrutura {
 
     }
 
+    public void removerminimo(No no){
+
+        No aux;
+
+        int qtd=0;
+
+        qtd++;
+
+        for(int x=0; x<qtd; x++){
+
+            aux = no.getEsquerda();
+            no.setEsquerda(null);
+            no.setEsquerda(aux);
+            
+            
+            System.out.println();
+
+        } 
+
+    }
+
 
 }

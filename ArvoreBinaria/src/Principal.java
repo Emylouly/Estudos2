@@ -22,8 +22,8 @@ public class Principal {
         //System.out.println("\n\n");
         //e.inOrdem();
 
-        System.out.println(n.getValor());
-        System.out.println("\n\n" + m.getValor());
+        //System.out.println(n.getValor());
+        //System.out.println("\n\n" + m.getValor());
 
 
     }
