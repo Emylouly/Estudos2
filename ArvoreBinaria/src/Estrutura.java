@@ -132,24 +132,38 @@ public class Estrutura {
 
     }
 
-    public void removerminimo(No no){
+    public No removerminimo(int valor){
 
-        No aux;
+        return removerminimo(this.raiz, valor);
 
-        int qtd=0;
+    }
 
-        qtd++;
+    private No removerminimo(No no, int valor){
 
-        for(int x=0; x<qtd; x++){
+        if(this.raiz==null){
 
-            aux = no.getEsquerda();
-            no.setEsquerda(null);
-            no.setEsquerda(aux);
-            
-            
-            System.out.println();
+            throw new Exception("Arvore vazia!!");
 
-        } 
+        }
+
+        if(valor< no.getValor()){
+
+            no.setEsquerda(removerminimo(no.getEsquerda(), valor));
+
+        }
+
+        else if(valor > no.getValor()){
+
+            no.setDireita(removerminimo(no.getDireita(),valor));
+        }
+
+        else{
+
+            no = (no.getEsquerda()!=null) ? no.getEsquerda() : no.getDireita();
+
+        }
+
+        return no;
 
     }
 
