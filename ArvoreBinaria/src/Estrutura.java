@@ -167,6 +167,12 @@ public class Estrutura {
 		return no;
 		
 	}
+
+    public int altura(){
+
+        return altura(this.raiz);
+
+    }
     
     private int altura(No no) {
         
@@ -194,12 +200,5 @@ public class Estrutura {
 
         }
     }
-
-    public int altura(){
-
-        return altura(this.raiz);
-
-    }
-
 
 }
