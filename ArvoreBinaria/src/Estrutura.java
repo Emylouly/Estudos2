@@ -132,13 +132,13 @@ public class Estrutura {
 
     }
 
-    public No removerminimo(int valor){
-
-        return removerminimo(this.raiz, valor);
-
-    }
-
-    private No valorMinimo(No no) {
+    public No valorMinimo() {
+		
+		return valorMinimo(this.raiz);
+		
+	}
+	
+	private No valorMinimo(No no) {
 		
 		if(no.getEsquerda()!=null) {
 			
@@ -167,6 +167,39 @@ public class Estrutura {
 		return no;
 		
 	}
+    
+    private int altura(No no) {
+        
+        if (no == null){
+
+            return 0;
+        }
+
+        else{
+
+        int alturaEsquerda = altura(no.getEsquerda());
+        int alturaDireita = altura(no.getDireita());
+    
+        if(alturaEsquerda>alturaDireita){
+
+            return alturaEsquerda +1;
+
+        }
+
+        else{
+
+            return alturaDireita +1;
+
+        }
+
+        }
+    }
+
+    public int altura(){
+
+        return altura(this.raiz);
+
+    }
 
 
 }
